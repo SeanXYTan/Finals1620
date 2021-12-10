@@ -4,16 +4,17 @@ const submitbtn = document.querySelector("#frm-btn");
 toggle.addEventListener("click", swap_themes);
 
 function swap_themes() {
-    listelement = document.getElementsByTagName('*');
+    listelement = document.getElementsByTagName('body');
+    console.log(listelement)
     for (let i = 0; i < listelement.length; i++) {
-        classesList = listelement[i].classList
-        if (!classesList.contains('light-theme')) {
-            classesList.add('light-theme')
-            classesList.remove('dark-theme')
+        listelement = listelement[i].classList
+        if (!listelement.contains('light-theme')) {
+            listelement.add('light-theme')
+            listelement.remove('dark-theme')
         }
         else {
-            classesList.remove('light-theme')
-            classesList.add('dark-theme')
+            listelement.remove('light-theme')
+            listelement.add('dark-theme')
         };
     };
 };

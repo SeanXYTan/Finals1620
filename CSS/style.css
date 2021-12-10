@@ -189,6 +189,10 @@ input[type=text]:focus {
 }
 
 @media screen and (max-width: 600px) {
+  nav ul {
+    justify-content: flex-start;
+  }
+  
   section {
     display: flex;
     flex-flow: column wrap;
@@ -204,9 +208,11 @@ input[type=text]:focus {
 
   .myForm, .contact {
     width: 90%;
+    order: 3;
   }
   
   .message > textarea {
     min-width: 1rem;
+    margin-bottom: 1em;
   }
 } 
