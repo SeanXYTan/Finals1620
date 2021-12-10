@@ -5,17 +5,14 @@ toggle.addEventListener("click", swap_themes);
 
 function swap_themes() {
     listelement = document.getElementsByTagName('body');
-    console.log(listelement)
-    for (let i = 0; i < listelement.length; i++) {
-        listelement = listelement[i].classList
-        if (!listelement.contains('light-theme')) {
-            listelement.add('light-theme')
-            listelement.remove('dark-theme')
-        }
-        else {
-            listelement.remove('light-theme')
-            listelement.add('dark-theme')
-        };
+    elementclass = listelement[0].classList;
+    if (!elementclass.contains('light-theme')) {
+        elementclass.add('light-theme')
+        elementclass.remove('dark-theme')
+    }
+    else {
+        elementclass.remove('light-theme')
+        elementclass.add('dark-theme')
     };
 };
 

@@ -188,6 +188,7 @@ input[type=text]:focus {
  color: var(--white);
 }
 
+
 @media screen and (max-width: 600px) {
   nav ul {
     justify-content: flex-start;
@@ -200,6 +201,7 @@ input[type=text]:focus {
 
   section > h1, h2 {
     font-size: 3rem;
+    padding: 1.8rem;
   }
 
   .myForm {
