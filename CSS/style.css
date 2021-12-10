@@ -90,9 +90,6 @@ nav {
 
 nav ul {
   list-style-type: none;
-}
-
-nav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -135,13 +132,6 @@ section {
 h1, h2 {
   font-family: Poppins, sans-serif;
   color: var(--fontColor);
-}
-
-h1 {
-  font-size: 8rem;
-}
-
-h2 {
   font-size: 8rem;
 }
 
@@ -197,3 +187,26 @@ input[type=text]:focus {
  background: var(--darkGreen);
  color: var(--white);
 }
+
+@media screen and (max-width: 600px) {
+  section {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  section > h1, h2 {
+    font-size: 3rem;
+  }
+
+  .myForm {
+    flex-flow: column wrap;
+  }
+
+  .myForm, .contact {
+    width: 90%;
+  }
+  
+  .message > textarea {
+    min-width: 1rem;
+  }
+} 
